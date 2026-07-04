@@ -3,7 +3,7 @@ title: ホルムズ海峡
 category: 地形
 ---
 
-ペルシャ湾（アラビア湾）とオマーン湾を結ぶ[国際海峡](/content/strait/international)．
+[ペルシャ湾（アラビア湾）](/content/dict/gulf/persian/index.md)とオマーン湾を結ぶ[国際海峡](/content/strait/international)．
 
 ::open-street-map{lat="26.7038" lon="56.5456" zoom="6"}
 ::

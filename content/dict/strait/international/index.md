@@ -24,7 +24,7 @@ category: 用語
 ### 具体例
 
 - [マラッカ海峡](/content/strait/malacca/)：マレー半島とスマトラ島の間，東アジアに運ばれる物資の主要ルート
-- [ホルムズ海峡](/content/strait/hormuz/)：ペルシャ（アラビア）湾とオマーン湾の間：原油の輸送経路
+- [ホルムズ海峡](/content/strait/hormuz/)：[ペルシャ（アラビア）湾](/content/dict/gulf/persian/index.md)とオマーン湾の間：原油の輸送経路
 - [ジブラルタル海峡](/content/strait/gibraltar/)：[スペイン](/content/es)とモロッコの間，太平洋と地中海を結び，ヨーロッパとアジア・アフリカを繋ぐ
 - [ドーヴァー海峡](/content/strait/dover/)：英仏の間，北海と大西洋を結ぶ
 
