@@ -23,25 +23,27 @@ const props = defineProps({
   },
 })
 
-// パスを変換する算出プロパティ
 const formattedHref = computed(() => {
   let url = props.href
 
-  // 1. `/content/dict/` を `/content/` に変換する（先頭の有無に対応）
+  // `/content/dict/` を `/content/` に変換
   url = url.replace(/^\/?content\/dict\//, '/content/')
 
-  // 2. 「index.md」の記述を完全に削除する
-  // 例: /content/tech/index.md -> /content/tech/
-  // 例: content/tech/index.md  -> /content/tech/
-  if (url.endsWith('index.md')) {
-    url = url.replace(/index\.md$/, '')
+  // #とそれ以降を一旦切り離す
+  const hashIndex = url.indexOf('#')
+  let path = hashIndex !== -1 ? url.substring(0, hashIndex) : url
+  const hash = hashIndex !== -1 ? url.substring(hashIndex) : ''
+
+  // `index.md` の記述を完全に削除
+  if (path.endsWith('index.md')) {
+    path = path.replace(/index\.md$/, '')
   }
 
-  // 3. 先頭が `/` で始まっていない場合は、ルート相対パスになるよう `/` を付与
-  if (!url.startsWith('/') && !url.startsWith('http') && !url.startsWith('#')) {
-    url = '/' + url
+  // 先頭が `/` で始まっていない場合は、ルート相対パスになるよう `/` を付与
+  if (!path.startsWith('/') && !path.startsWith('http') && !path.startsWith('#')) {
+    path = '/' + path
   }
 
-  return url
+  return path + hash
 })
 </script>
