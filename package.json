@@ -17,7 +17,7 @@
     "vue-router": "^5.2.0"
   },
   "devDependencies": {
-    "@digidict/layer-nuxt": "^0.1.6",
+    "@digidict/layer-nuxt": "^0.1.7",
     "@iconify-json/hugeicons": "^1.2.31",
     "@iconify-json/material-symbols-light": "^1.2.85",
     "oxfmt": "^0.59.0",

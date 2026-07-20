@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: '地理探求 - dict.digital',
+      title: '地理探求 - DigiDict',
       htmlAttrs: {
         lang: 'ja'
       }
