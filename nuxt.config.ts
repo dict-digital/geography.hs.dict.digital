@@ -14,6 +14,6 @@ export default defineNuxtConfig({
   site: {
     url: 'https://geography.hs.dict.digital',
     name: '地理探求 - DigiDict',
-    trailingSlash: true,
+    trailingSlash: true
   }
 });

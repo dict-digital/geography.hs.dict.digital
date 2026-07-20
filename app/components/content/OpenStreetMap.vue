@@ -34,7 +34,7 @@ const zoomNum = computed(() => Number(props.zoom));
 // 緯度・経度・ズームレベルから iframe 用の bbox を計算
 const bboxString = computed(() => {
   const degreeDelta = 360 / Math.pow(2, zoomNum.value);
-  const aspectRatio = 16 / 9; 
+  const aspectRatio = 16 / 9;
   const lonDelta = degreeDelta * aspectRatio * 0.25;
   const latDelta = degreeDelta * 0.25;
 
@@ -57,18 +57,27 @@ const frameSrc = computed(() => {
 const linkHref = computed(() => {
   const fixedLat = latNum.value.toFixed(5);
   const fixedLon = lonNum.value.toFixed(5);
-  
+
   const baseUrlWithQuery = withQuery('https://www.openstreetmap.org/', {
     mlat: fixedLat,
     mlon: fixedLon
   });
-  
+
   return `${baseUrlWithQuery}#map=${zoomNum.value}/${fixedLat}/${fixedLon}`;
 });
 </script>
 
 <template>
-  <div data-pagefind-ignore data-nosnippet flex flex-col w-full px-6 align-right class="mapRootDiv">
+  <div
+    data-pagefind-ignore
+    data-nosnippet
+    flex
+    flex-col
+    w-full
+    px-6
+    align-right
+    class="mapRootDiv"
+  >
     <div
       v-if="isHidden"
       w-full
@@ -97,7 +106,7 @@ const linkHref = computed(() => {
       </button>
     </div>
 
-    <iframe v-else w-full h-full :src="frameSrc" style="border: none;"></iframe>
+    <iframe v-else w-full h-full :src="frameSrc" style="border: none"></iframe>
 
     <NuxtLink text-right :to="linkHref" target="_blank" class="mt-2">
       新規タブで開く<span i-material-symbols-light-open-in-new></span>
