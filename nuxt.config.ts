@@ -8,12 +8,16 @@ export default defineNuxtConfig({
       }
     }
   },
+
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   extends: ['@digidict/layer-nuxt'],
+
   site: {
     url: 'https://geography.hs.dict.digital',
     name: '地理探求 - DigiDict',
     trailingSlash: true
-  }
+  },
+
+  modules: ['@nuxt/eslint']
 });
