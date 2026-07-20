@@ -9,48 +9,11 @@ export default defineNuxtConfig({
     }
   },
   compatibilityDate: '2025-07-15',
-  content: {
-    build: {
-      markdown: {
-        highlight: {
-          theme: 'night-owl',
-          langs: ['js', 'jsx', 'ts', 'tsx', 'svelte']
-        },
-        remarkPlugins: {
-          'remark-math': {}
-        },
-        rehypePlugins: {
-          'rehype-katex': {}
-        }
-      }
-    }
-  },
-  css: [
-    '@unocss/reset/sanitize/sanitize.css',
-    '@unocss/reset/sanitize/assets.css',
-    '~/assets/global.scss',
-    'katex/dist/katex.min.css'
-  ],
   devtools: { enabled: true },
-  experimental: {
-    defaults: {
-      nuxtLink: {
-        trailingSlash: 'append'
-      }
-    }
-  },
-  modules: ['@nuxtjs/sitemap', '@nuxt/content', '@unocss/nuxt'],
+  extends: ['@digidict/layer-nuxt'],
   site: {
     url: 'https://geography.hs.dict.digital',
-    name: '地理探求 - dict.digital',
+    name: '地理探求 - DigiDict',
     trailingSlash: true,
-  },
-  sitemap: {
-    zeroRuntime: true
-  },
-  vite: {
-    optimizeDeps: {
-      include: ['@vue/devtools-core', '@vue/devtools-kit', '@vueuse/core']
-    }
   }
 });
