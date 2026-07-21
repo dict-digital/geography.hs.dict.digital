@@ -7,7 +7,7 @@ export default defineAppConfig({
     },
     siteName: '地理探求 - DigiDict',
     copyRight: '2026-present DigiDict',
-    githubLink: 'https://github.com/dict-digital/hs-geography',
+    githubLink: 'https://github.com/dict-digital/geography.hs.dict.digital',
     i18n: {
       search: '検索',
       title: '見出し',
