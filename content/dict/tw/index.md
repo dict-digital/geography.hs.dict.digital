@@ -14,7 +14,7 @@ category: 国家
 
 ## 2. 産業
 
-- **アジアNIEs**の一つ
+- [**アジアNIEs**](/content/dict/asia_nies/index.md)の一つ
 - 半導体・電子工業が発達
   - TSMCなど
 - カオシュン（高雄）：最初に輸出加工区に指定された
