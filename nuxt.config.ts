@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         local: {
           client_id: 'https://geography.hs.dict.digital/client-metadata.json',
           client_uri: 'https://geography.hs.dict.digital',
-          redirect_uris: ['https://geography.hs.dict.digital'],
+          redirect_uris: ['https://geography.hs.dict.digital']
         }
       }
     },
