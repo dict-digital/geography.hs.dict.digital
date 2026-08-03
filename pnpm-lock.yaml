@@ -19,8 +19,8 @@ importers:
         version: 5.2.0(@vue/compiler-sfc@3.5.40)(esbuild@0.28.0)(rolldown@1.2.0)(rollup@4.60.4)(vite@8.1.5(@types/node@25.8.0)(esbuild@0.28.0)(jiti@2.7.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0))(vue@3.5.40(typescript@5.9.3))(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.19))
     devDependencies:
       '@digidict/layer-nuxt':
-        specifier: ^0.2.1
-        version: 0.2.1(979a185b666b8b69403cdd08e7f3100e)
+        specifier: ^0.2.2
+        version: 0.2.2(979a185b666b8b69403cdd08e7f3100e)
       '@iconify-json/hugeicons':
         specifier: ^1.2.31
         version: 1.2.31
@@ -372,8 +372,8 @@ packages:
     peerDependencies:
       devframe: 0.5.4
 
-  '@digidict/layer-nuxt@0.2.1':
-    resolution: {integrity: sha512-go0RyPBJn1JR5ZuWD6GmuSRCVZ3doeXYCFmzqInucZopW4WBtU1EENzbRzOmCT/CmehwCsDl3mZG9yPqfqzynA==}
+  '@digidict/layer-nuxt@0.2.2':
+    resolution: {integrity: sha512-WV7Lt4rIFzgAENm69w+uuJ+MmaFG5ss0ubWIGPcO2HGIYw96eiZFYdMFjzg3CJGKesrrA2bnOYSqMRioYu7wMw==}
     engines: {node: v24.14.0}
     peerDependencies:
       '@iconify-json/hugeicons': ^1.2.31
@@ -7775,7 +7775,7 @@ snapshots:
       - vite
       - webpack
 
-  '@digidict/layer-nuxt@0.2.1(979a185b666b8b69403cdd08e7f3100e)':
+  '@digidict/layer-nuxt@0.2.2(979a185b666b8b69403cdd08e7f3100e)':
     dependencies:
       '@fontsource-variable/fira-code': 5.2.7
       '@fontsource-variable/m-plus-1-code': 5.2.10
