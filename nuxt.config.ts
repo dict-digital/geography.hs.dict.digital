@@ -19,5 +19,13 @@ export default defineNuxtConfig({
     trailingSlash: true
   },
 
-  modules: ['@nuxt/eslint']
+  modules: ['@nuxt/eslint'],
+// 利用側（本体）の nuxt.config.ts
+
+  hooks: {
+    // レイヤー側の Pagefind (execSync) 処理を「空関数」で上書きして無効化する
+    'nitro:build:public-assets': () => {}
+  },
+
+
 });
