@@ -1,6 +1,7 @@
 // app/app.config.ts
 export default defineAppConfig({
   myDict: {
+    atprotoHost: 'https://geography.hs.dict.digital',
     theme: {
       lightColor: '#7508d4',
       darkColor: '#9b58ff'
@@ -12,6 +13,17 @@ export default defineAppConfig({
       search: '検索',
       title: '見出し',
       full_text: '全文',
+      atproto: {
+        login: {
+          label: 'ハンドル名かPDSアドレスを入力',
+          connecting: '接続中...',
+          button: 'PDSにログイン',
+          error: 'ログインに失敗しました．ハンドル名を確かめてください．'
+        },
+        signOut: 'ログアウト',
+        checkStatus: '認証状態を確認中です...',
+        sync: 'PDSに同期済み'
+      },
       color_mode: {
         name: 'テーマ',
         system: 'システム',
