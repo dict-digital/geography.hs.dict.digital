@@ -8,20 +8,6 @@ export default defineNuxtConfig({
       }
     }
   },
-  atproto: {
-    oauth: {
-      writeClientMetadata: true,
-      clientMetadata: {
-        remote: '',
-        local: {
-          client_id: 'https://geography.hs.dict.digital/client-metadata.json',
-          client_uri: 'https://geography.hs.dict.digital',
-          redirect_uris: ['https://geography.hs.dict.digital']
-        }
-      }
-    },
-    debug: true
-  },
 
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
