@@ -19,7 +19,7 @@
     "vue-router": "^5.2.0"
   },
   "devDependencies": {
-    "@digidict/layer-nuxt": "0.3.1",
+    "@digidict/layer-nuxt": "0.3.3",
     "@iconify-json/hugeicons": "^1.2.31",
     "@iconify-json/material-symbols-light": "^1.2.88",
     "@nuxt/eslint": "^1.16.0",
