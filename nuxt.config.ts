@@ -19,5 +19,5 @@ export default defineNuxtConfig({
     trailingSlash: true
   },
 
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint']
 });
