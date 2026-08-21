@@ -18,14 +18,15 @@ export default defineAppConfig({
           label: 'ハンドル名かPDSアドレスを入力',
           connecting: '接続中...',
           button: 'PDSにログイン',
-          error: 'ログインに失敗しました．ハンドル名を確かめてください．'
+          error: 'ログインに失敗しました．ハンドル名を確かめてください．',
+          withBluesky: 'Blueskyでログイン'
         },
         signOut: 'ログアウト',
-        checkStatus: '認証状態を確認中です...',
+        checkStatus: 'ログイン状態を確認中...',
         sync: 'PDSに同期済み'
       },
       color_mode: {
-        name: 'テーマ',
+        name: '外観モード',
         system: 'システム',
         light: 'ライト',
         dark: 'ダーク'
