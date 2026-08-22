@@ -1,7 +1,10 @@
 ---
 title: 朝鮮半島
-category: 地域
+category: 地形
 ---
+
+::open-street-map{lat="37.73" lon="124.29", zoom="6"}
+::
 
 ## 1. 自然環境
 
